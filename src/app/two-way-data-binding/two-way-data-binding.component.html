@@ -1,0 +1,10 @@
+<h2>Two Way Binding Component</h2>
+<select [(ngModel)]="temaSeleccionado">
+    <option value="darkTheme">Tema oscuro</option>
+    <option value="lightTheme">Tema claro</option>
+    <option value="highContrastTheme">Tema de alto contraste</option>
+</select>
+
+<div [ngClass]="getClaseTema()">
+    <p>Un texto de ejemplo</p>
+</div>
