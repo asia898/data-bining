@@ -1,0 +1,6 @@
+<h2>Crea tu ngModel</h2>
+<input type="text" [value]="nombre" (input)="changeNombre($event)">
+<p>Nombre: {{ nombre }}</p>
+
+<input type="text" [(ngModel)]="year">
+<p>Year: {{ year }}</p>
